@@ -6,8 +6,8 @@ Une application web complète pour gérer les réservations d'un restaurant, dé
 
 ### Page Publique (/)
 - Formulaire de réservation avec validation
-- Champs requis : nom, email, téléphone, nombre de personnes, date (jj-mm-yyyy), heure
-- Validation stricte du format de date jj-mm-yyyy
+- Champs requis : nom, email, téléphone, nombre de personnes, date (jj-mm-aaaa), heure
+- Validation stricte du format de date jj-mm-aaaa
 - Design responsive avec thème restaurant
 
 ### Page Administration (/admin)
@@ -69,7 +69,7 @@ CREATE TABLE reservations (
   email TEXT NOT NULL,
   phone TEXT NOT NULL,
   guests INTEGER NOT NULL,
-  date TEXT NOT NULL,           -- Format: jj-mm-yyyy
+  date TEXT NOT NULL,           -- Format: jj-mm-aaaa
   time TEXT NOT NULL,           -- Format: HH:MM
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
@@ -102,7 +102,7 @@ DATA_DIRECTORY=/chemin/vers/donnees
 ## Validation des Données
 
 ### Format de date
-- **Requis** : jj-mm-yyyy (ex: 25-12-2024)
+- **Requis** : jj-mm-aaaa (ex: 18-08-2025)
 - Validation côté client et serveur
 - Vérification que la date n'est pas dans le passé
 
@@ -140,7 +140,7 @@ restaurant-reservation/
 ### Créer une réservation
 1. Aller sur la page d'accueil
 2. Remplir le formulaire avec les informations requises
-3. **Important** : La date doit être au format jj-mm-yyyy
+3. **Important** : La date doit être au format jj-mm-aaaa
 4. Sélectionner l'heure parmi les créneaux disponibles
 5. Cliquer sur "Réserver"
 
