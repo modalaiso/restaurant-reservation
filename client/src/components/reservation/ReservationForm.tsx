@@ -123,7 +123,7 @@ const ReservationForm = () => {
           onChange={(e) => handleInputChange('phone', e.target.value)}
           required
           className="mt-1"
-          placeholder="06 12 34 56 78"
+          placeholder="01 23 45 67 89"
         />
       </div>
 
