@@ -10,8 +10,7 @@ const HomePage = () => {
           Nom du restaurant
         </h1>
         <p className="text-lg text-amber-700 max-w-2xl mx-auto">
-          Réservez votre table dans notre restaurant et découvrez une cuisine raffinée 
-          dans une ambiance chaleureuse.
+          Description
         </p>
       </div>
       
